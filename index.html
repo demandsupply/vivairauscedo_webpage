@@ -4,7 +4,7 @@
         <title>Vivai Rauscedo: l'innovazione in viticoltura</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./index.css">
-
+        <script src="./index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
@@ -19,8 +19,8 @@
                         <div class="underline"></div>
                         <div class="overlay"></div>
                     </li>
-                    <li>
-                        <a href="https://www.vivairauscedo.com/chi-siamo/" class="dropdown-menu-1"><strong>CHI SIAMO</strong></a>
+                    <li class="dropdown-menu-1">
+                        <a href="https://www.vivairauscedo.com/chi-siamo/"><strong>CHI SIAMO</strong></a>
                         <div class="underline"></div>
                         <!-- Dropdown content 1 -->
                         <div class="dropdown-content-one">
@@ -38,8 +38,8 @@
                         <a href="https://www.vivairauscedo.com/servizi/"><strong>SERVIZI</strong></a>
                         <div class="underline"></div>
                     </li>
-                    <li>
-                        <a href="https://www.vivairauscedo.com/innovazione/" class="dropdown-menu-2"><strong>INNOVAZIONE</strong></a>
+                    <li class="dropdown-menu-2">
+                        <a href="https://www.vivairauscedo.com/innovazione/"><strong>INNOVAZIONE</strong></a>
                         <div class="underline"></div>
                         <!-- Dropdown content 2 -->
                         <div class="dropdown-content-two">
@@ -56,10 +56,10 @@
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fa fa-search dropdown-menu-3"></i>
+                            <i onclick="myFunction()" class="fa fa-search dropdown-menu-3"></i>
                         </a>
                         <!-- Dropdown content 3 -->
-                        <div class="dropdown-content-three search-bar">
+                        <div class="dropdown-content-three search-bar" id="dropdown-content-three">
                             <form action="">
                                 <input type="text" placeholder="Digita e premi invio..." name="search">
                                 <button type="submit"><i class="fa fa-search"></i></button>
