@@ -1,9 +1,6 @@
 @font-face {
-    font-family: "opensans";
-    src: url(./OpenSans-CondBold-webfont.woff) format(woff);
-    src: url(./OpenSans-CondLight-webfont.woff) format(woff);
-    src: url(./OpenSans-CondBold-webfont.woff) format(woff);
-
+    font-family: 'Open Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 }
 
 * {
@@ -14,7 +11,7 @@
 }
 
 body {
-    font-family: "opensans";
+    font-family: "Open Sans";
 }
 
 .nav-container {
@@ -28,7 +25,7 @@ nav a {
 
 nav {
     width: 1200px;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -49,6 +46,7 @@ nav {
 .menu li a {
     height: 100%;
     width: 100%;
+    font-size: 12px;
 }
 
 .overlay {
@@ -91,9 +89,14 @@ nav {
     color: #888;
 }
 
-.button.brown:hover {
+.menu li:hover .button.brown {
     color: #fff;
+}
+
+.button.brown:hover,
+.button-two.brown:hover {
     background-color: #494948;
+    transition: .6s;
 }
 
 .box-lang {
@@ -183,3 +186,47 @@ form button {
 input:focus {
     outline: none;
 }
+
+/* Section ONE */
+
+.section-one-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+video {
+    /* border: 1px solid #000; */
+    max-width: 100%;
+}
+
+.section-one-a {
+    width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    margin: 25px 0 50px;
+    color: #72635b;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-one-a p {
+    margin-top: 12px;
+    color: #7f7e7c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.button-two {
+    display: block;
+    width: max-content;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 42px auto;
+}
+
