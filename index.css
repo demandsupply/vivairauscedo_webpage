@@ -230,3 +230,118 @@ h2 {
     margin: 42px auto;
 }
 
+/* Section TWO */
+
+.section-two-container {
+    position: relative;
+    width: 100%;
+    height: 1020px;
+    background-color: #bcb5ab;
+}
+
+.svg-triangle {
+    /* border: 1px solid #000; */
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    transform: translateX(-50%); 
+    left: 50%;
+}
+
+polygon {
+    width: 100%;
+    height: 100%;
+}
+
+.section-two {
+    width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+
+.section-two * {
+    /* border: 1px solid #000; */
+}
+
+.white {
+    color: #fff;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.section-two h2 {
+    padding-top: 120px;
+}
+
+.section-two h4 {
+    margin-top: -32px;
+}
+
+.carousel {
+    margin: 60px auto;
+    position: relative;
+    width: 1200px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: visible;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+}
+
+.carousel-button i {
+    font-size: 24px;
+    padding: 4px 8px;
+    opacity: .3;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.button-left {
+    left: -5%;
+}
+
+.button-right {
+    right: -5%;
+}
+
+.slides-container {
+    /* position: absolute; */
+    display: flex;
+    /* gap: 50px; */
+}
+
+.carousel-box {
+    margin: 0 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+.carousel-box figcaption {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 36px 0;
+}
+
+.carousel-box img {
+    border-radius: 200px;
+}
+
+.carousel-box p {
+    text-align: justify;
+}
+
+.carousel-button:hover i {
+    opacity: 0.6;
+    background-color: #fff;
+    transition: .4s;
+}
