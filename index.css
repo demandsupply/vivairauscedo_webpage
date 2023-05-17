@@ -345,3 +345,54 @@ h4 {
     background-color: #fff;
     transition: .4s;
 }
+
+/* Section THREE A */
+
+.section-three-container {
+    width: 100%;
+}
+
+.section-three-a {
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #888
+}
+
+.section-three-a h2 {
+    margin-top: 56px;
+}
+
+.section-three-a p {
+    font-size: 17px;
+    margin: -20px 0 12px 0;
+    color: #7f7e7c;
+    text-align: center;
+}
+
+.products-container {
+    width: 1200px;
+    /* border: 1px solid #494948; */
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 12px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 120px;
+    /* border: 1px solid #494948; */
+
+}
+
+.product span {
+    color: #72635b;
+}
+
+/* Section THREE B */
