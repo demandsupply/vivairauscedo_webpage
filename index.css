@@ -352,12 +352,15 @@ h4 {
     width: 100%;
 }
 
+.section-three-a {
+    border-bottom: 1px solid #888
+}
+
 .section-three-a,
 .section-three-b {
     width: 1200px;
     margin: auto;
     padding-bottom: 80px;
-    border-bottom: 1px solid #888
 }
 
 .section-three-a h2 {
@@ -431,7 +434,17 @@ h4 {
     color: #b7cb94;
 }
 
+.choose-window {
+    position: relative;
+}
+
 .choose-box {
+    display: none;
+    position: absolute;
+}
+
+
+.choose-cont {
     display: flex;
 }
 
@@ -525,8 +538,61 @@ h4 {
     margin-left: 0;
 }
 
+
+/* Style the point parts */
+
 .features {
     display: none;
 }
 
+.pointA,
+.pointB,
+.pointC,
+.pointD {
+    position: absolute;
+}
+
+
+/* Section FOUR */
+
+.section-four-container {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background-color: #bcb5ab;
+}
+
+.section-four {
+    width: 1200px;
+    margin: auto;
+}
+
+.section-four > div {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-four img {
+    width: 580px;
+}
+
+.section-four-b {
+    width: 580px;
+}
+
+.section-four-b h2 {
+    text-align: left;
+}
+
+.section-four-b p {
+    margin-top: -32px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.section-four-b a {
+    margin-top: 56px;
+    margin-right: 0%;
+}
 
