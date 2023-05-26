@@ -281,12 +281,17 @@ h4 {
 }
 
 .carousel {
+    --current-slide: 0;
     margin: 60px auto;
     position: relative;
     width: 1200px;
     display: flex;
     /* flex-wrap: wrap; */
     overflow: visible;
+}
+
+.carousel-buttons-container {
+    z-index: 2;
 }
 
 .carousel-button {
@@ -314,6 +319,7 @@ h4 {
     /* position: absolute; */
     display: flex;
     /* gap: 50px; */
+    transition: transform 0.5s;
 }
 
 .carousel-box {
@@ -594,5 +600,62 @@ h4 {
 .section-four-b a {
     margin-top: 56px;
     margin-right: 0%;
+}
+
+/* Section FIVE */
+
+.section-five-container {
+    width: 100%;
+}
+
+.section-five {
+    height: 1100px;
+    padding-top: 80px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+
+.section-five h2 {
+    text-align: left;
+    padding-left: 64px;
+}
+
+.numbers-container {
+    margin-top: 124px;
+    /* border: 1px solid #000; */
+}
+
+.descriptions-container {
+    width: 850px;
+}
+
+.description {
+    font-size: 16px;
+    color: #7f7e7c;
+    padding: 32px 0 0 64px;
+    text-align: justify;
+}
+
+.description,
+.numbers {
+    height: 148px;
+    /* border: 1px solid #000; */
+}
+
+.numbers {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 80px;
+    color: #72635b;
+}
+
+.numbers span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #8e4237;
 }
 

@@ -4,11 +4,11 @@
         <title>Vivai Rauscedo: l'innovazione in viticoltura</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="./index.css">
-        <script src="./index.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <div class="nav-container">
@@ -121,12 +121,12 @@
             <div class="section-two">
                 <h2 class="white"><strong>Perchè affidarsi a VCR?</strong></h2>
                 <h4 class="white"><strong>Certezza del risultato, assistenza personalizzata, passione per la sperimentazione</strong></h4>
-                <div class="carousel">
+                <div class="carousel" data-carousel>
                     <div class="carousel-buttons-container">
-                        <a href="#" class="carousel-button button-left"><i class="fa-solid fa-angle-left"></i></a>
-                        <a href="#" class="carousel-button button-right"><i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#" class="carousel-button button-left" data-carousel-button-left><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="#" class="carousel-button button-right" data-carousel-button-right><i class="fa-solid fa-angle-right"></i></a>
                     </div>
-                    <div class="slides-container">
+                    <div class="slides-container" data-slides>
                         <div class="carousel-box">
                             <figure>
                                 <img src="./images/feat-1.jpg" alt="">
@@ -1029,5 +1029,55 @@
                 </div>
             </div>
         </div>
+        <div class="section-five-container">
+            <div class="section-five">
+                <div class="numbers-container">
+                    <div class="numbers">210
+                        <span><strong>SOCI</strong></span>
+                    </div>
+                    <div class="numbers">3.056
+                        <span><strong>ETTARI COLTIVATI</strong></span>
+                    </div>
+                    <div class="numbers">1.200
+                        <span><strong>ETTARI A VIVAIO</strong></span>
+                    </div>
+                    <div class="numbers">4.000
+                        <span><strong>COMBINAZIONI DI INNESTO</strong></span>
+                    </div>
+                    <div class="numbers">1.300
+                        <span><strong>OPERATORI</strong></span>
+                    </div>
+                </div>
+                <div class="descriptions-container">
+                    <h2><strong>La forza della cooperazione</strong></h2>
+                    <p class="description">
+                        La produzione VCR poggia le proprie basi sul lavoro e l’esperienza di oltre 210 diverse aziende agricole associate che, sotto il 
+                        controllo e il coordinamento degli organi tecnici della società, preservano i caratteri storici, distintivi e qualitativi della 
+                        filiera vivaistica-viticola.
+                    </p>
+                    <p class="description">
+                        Superficie VCR dedicata alla coltivazione di Piante Madri Marze e Piante Madri Portinnesto. L’elevata estensione coinvolta offre 
+                        alla cooperativa, in ogni annata e in ogni situazione, la possibilità di selezionare ed utilizzare solamente il materiale 
+                        migliore potendo garantire, anche al manifestarsi di agenti atmosferici estremi, la massima qualità e disponibilità.
+                    </p>
+                    <p class="description">
+                        Superficie destinata annualmente a vivaio idonea a garantire, oltre alle elevate produzioni richieste, la possibilità di posizionare 
+                        e gestire le molteplici combinazioni d’innesto in funzioni delle loro reali esigenze e necessità.
+                    </p>
+                    <p class="description">
+                        L’ampia base sociale della cooperativa consente ai VCR di poter garantire ai propri clienti un assortimento varietale, clonale e 
+                        di combinazioni d’innesto ineguagliabile, offrendo, in ogni annata agraria, le soluzioni più idonee per ogni eco-sistema.
+                    </p>
+                    <p class="description">
+                        Personale impiegato nel controllo qualità dell’intera produzione VCR. In questa importantissima fase della filiera, denominata 
+                        cernita, tutte le barbatelle prodotte vengono controllate manualmente una ad una verificandone scrupolosamente l’apparato radicale, 
+                        il diametro, la saldatura del punto di innesto e la qualità delle gemme. L’imparzialità della selezione svolta viene garantita 
+                        dal fatto che di ciascun lotto controllato, gli operatori coinvolti, non conoscono origine, conduzione e relativo produttore 
+                        evitando così ogni forma di favoritismo interno.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
     </body>
 </html>
