@@ -659,3 +659,30 @@ h4 {
     color: #8e4237;
 }
 
+/* Section SIX */
+
+.section-six-container {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background-color: #bcb5ab;
+}
+
+.section-six {
+    width: 1200px;
+    margin: auto;
+}
+
+.section-six h2 {
+    padding-top: 80px;
+}
+
+.section-six h4 {
+    margin: -40px 0px 20px 0;
+}
+
+.section-six p {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
