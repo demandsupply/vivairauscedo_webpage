@@ -94,7 +94,8 @@ nav {
 }
 
 .button.brown:hover,
-.button-two.brown:hover {
+.button-two.brown:hover,
+.pcarousel-buttons button:hover {
     background-color: #494948;
     transition: .6s;
 }
@@ -228,6 +229,7 @@ h2 {
     padding: 10px 20px;
     text-decoration: none;
     margin: 42px auto;
+    font-size: 14px;
 }
 
 /* Section TWO */
@@ -297,6 +299,9 @@ h4 {
 .carousel-button {
     position: absolute;
     top: 50%;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .carousel-button i {
@@ -308,24 +313,27 @@ h4 {
 }
 
 .button-left {
-    left: -5%;
+    left: -4%;
 }
 
 .button-right {
-    right: -5%;
+    right: -4%;
 }
 
 .slides-container {
+    width: 1200px;
     /* position: absolute; */
     display: flex;
     /* gap: 50px; */
     transition: transform 0.5s;
+    /* transform: translateX(-50%); */
 }
 
 .carousel-box {
     margin: 0 50px;
     width: 500px;
     display: flex;
+    flex: 0 0 42%;
     flex-direction: column;
     align-items: center;
     padding: 24px;
@@ -685,4 +693,171 @@ h4 {
     color: #fff;
     text-align: center;
     font-size: 15px;
+}
+
+/* Section SEVEN */
+
+.section-seven-container {
+    width: 100%;
+}
+
+.section-seven {
+    width: 1200px;
+    margin: auto;
+}
+
+.section-seven > h2 {
+    margin-top: 56px;
+}
+
+.pcarousel {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.pcarousel-buttons {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcarousel-buttons button {
+    background-color: #8e4237;
+    border: none;
+    border-radius: 50%;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.pcarousel-buttons i {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pslides {
+    margin: auto;
+    display: flex;
+    width: 800px;
+    border: 1px solid #000;
+    overflow: hidden;
+
+}
+
+.partnerslogo {
+    width: 160px;
+    margin: 0 18px;
+}
+
+.partnerslogo img {
+    width: 160px;
+}
+
+.partners-container2 {
+    width: 80%;
+    margin: 16px auto;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.partners-container2 p {
+    width: 600px;
+    font-size: 10px;
+    color: #494948;
+    line-height: 20px;
+}
+
+.partners-container2 .button-two {
+    width: 40%;
+    text-align: center;
+}
+
+.partners-container2 .button-two i {
+    margin-left: 8px;
+}
+
+.globe-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.globe-a {
+    width: 700px;
+}
+
+.globe-a h2 {
+    text-align: left;
+}
+
+.globe-a p {
+    margin-top: -32px;
+    font-size: 14px;
+    color: #494948;
+}
+
+.glink {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 24px 0;
+    color: #8e4237;
+}
+
+.globe-a .button-two {
+    margin-left: 0px;
+}
+
+.globe-container img {
+    width: 420px;
+    height: fit-content;
+}
+
+/* Prov */
+
+.prov {
+    width: 1200px;
+    margin: auto;
+    height: 2000px;
+}
+
+.carousel2 {
+    position: relative;
+    overflow: visible;
+}
+
+.buttons2 {
+    top: 50%;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff; 
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.buttons2 button {
+    font-size: 32px;
+}
+
+.slide2 {
+    display: flex;
+}
+
+.slide2 div {
+    flex: 0 0 100%;
+}
+
+.slide2 img {
+    width: 300px;
+    height: 300px;
 }
