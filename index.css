@@ -379,6 +379,7 @@ h4 {
 .section-three-a,
 .section-three-b {
     width: 1200px;
+    height: auto;
     margin: auto;
     padding-bottom: 80px;
 }
@@ -421,6 +422,10 @@ h4 {
 
 /* Section THREE B */
 
+.section-three-b {
+    height: 1300px;
+}
+
 .section-three-b > p {
     margin-top: -32px;
     font-size: 17px;
@@ -435,32 +440,39 @@ h4 {
     justify-content: space-around;
     align-items: center;
     gap: 8px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     list-style: none;
 }
 
 .choose-menu li {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex: content;
     color: #72635b;
+    background-color: #eee;
     font-weight: 700;
 }
 
 .choose-menu li:hover {
     color: #b7cb94;
+    cursor: pointer;
 }
 
 .choose-window {
     position: relative;
 }
 
+.choose-box.main {
+    display: block;
+}
+
 .choose-box {
     display: none;
     position: absolute;
+    transition: transform 0.5s;
 }
 
 

@@ -50,12 +50,12 @@ function handlePrev() {
 }
 
 // Function 2.2: create the carousel two
-const buttonPre2 = document.querySelector('[data-carousel-button-left2]');
+const buttonPrev2 = document.querySelector('[data-carousel-button-left2]');
 const buttonNext2 = document.querySelector('[data-carousel-button-right2]');
 const slidesContainer2 = document.querySelector('[data-slides2]');
 
 buttonNext2.addEventListener('click', handleNext2);
-buttonPre2.addEventListener('click', handlePrev2);
+buttonPrev2.addEventListener('click', handlePrev2);
 
 let currentSlide2 = 0;
 const numSlides2 = (slidesContainer2.children.length)/2+1;
@@ -81,9 +81,6 @@ function handlePrev2() {
     }
 }
 
-
-
-
 // const carousels = document.querySelectorAll('[data-carousel]');
 
 // carousels.forEach(setUpCarousel);
@@ -91,26 +88,17 @@ function handlePrev2() {
 
 
 
-// function shoWindow() {
-//     var windows = document.querySelectorAll("#prod-one, #prod-two, #prod-three, #prod-four, #prod-five, #prod-six, #prod-seven, #prod-eight, #prod-nine");
+// function 3: show one box and hide the others
 
-// }
+function shoWindow(id) {
+    if (document.getElementById) {
+        var boxId = document.getElementById(id);
+        var allboxes = document.getElementsByClassName("choose-box");
+        for(var i=0; i<allboxes.length; i++) {
+            allboxes[i].style.display = "none";
+        }
+        boxId.style.display = "block";
+    }
+    return false;
+}
 
-// function shoWindow(id) {
-//     if (document.getElementById) {
-//         var divId = document.getElementById(id);
-//         var divs = document.getElementsByClassName("choose-box");
-//         for(var i=0; i<divs.length; i++) {
-//             divs[i].style.display = "none";
-//         }
-//         divId.style.display = "block";
-//     }
-//     return false;
-// }
-
-// prov
-// function setUpCarousel2(carousel2) {
-    const buttonPrev2 = document.querySelector('[data-carousel2-button-prev-one]');
-
-    buttonPrev2.addEventListener('click', () => console.log('clicked'));
-// }
