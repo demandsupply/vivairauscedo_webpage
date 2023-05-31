@@ -322,6 +322,7 @@ h4 {
 }
 
 .overflow {
+    position: relative;
     overflow: hidden;
 }
 
@@ -716,6 +717,7 @@ h4 {
 }
 
 .pcarousel {
+    --current-slide: 0;
     width: 1000px;
     margin: auto;
     position: relative;
@@ -728,6 +730,7 @@ h4 {
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .pcarousel-buttons button {
@@ -744,13 +747,41 @@ h4 {
     font-weight: 700;
 }
 
+.pcarousel-left {
+    left: -4%;
+}
+
+.pcarousel-right {
+    right: -4%;
+}
+
 .pslides {
     margin: auto;
     display: flex;
     width: 800px;
-    border: 1px solid #000;
-    overflow: hidden;
+    /* border: 1px solid #000; */
+    /* overflow: hidden; */
+    transition: transform 0.5s;
+}
 
+.cover {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100px;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    z-index: 1;
+}
+
+.cover.aa {
+    width: 92px;
+    left: 0;
+}
+
+.cover.bb {
+    right: 0;
+    width: 106px;
 }
 
 .partnerslogo {

@@ -10,52 +10,83 @@ function myFunction() {
 }
 
 
-// Function 2: create the carousel
-function setUpCarousel(carousel) {
-    const buttonPrev = carousel.querySelector('[data-carousel-button-left]');
-    const buttonNext = carousel.querySelector('[data-carousel-button-right]');
-    const slidesContainer = carousel.querySelector('[data-slides]');
+// Function 2.1: create the carousel one
+const buttonPrev = document.querySelector('[data-carousel-button-left]');
+const buttonNext = document.querySelector('[data-carousel-button-right]');
+const slidesContainer = document.querySelector('[data-slides]');
 
-    // When click "buttonNext" it will run the "handleNext" function, and when click "buttonPrev" it will do the opposite
-    buttonNext.addEventListener('click', handleNext);
-    buttonPrev.addEventListener('click', handlePrev);
+// When click "buttonNext" it will run the "handleNext" function, and when click "buttonPrev" it will do the opposite
+buttonNext.addEventListener('click', handleNext);
+buttonPrev.addEventListener('click', handlePrev);
 
-    buttonNext.addEventListener('click', () => console.log('clicked'));
-
-
-    // slidesContainer.style.transform = 'translateX(-90%)';
-
-    let currentSlide = 0;
-    const numSlides = (slidesContainer.children.length)/2;
+buttonNext.addEventListener('click', () => console.log('clicked'));
 
 
-    function handleNext() {
-        if (currentSlide >= numSlides) {
-            currentSlide = currentSlide;
-        }
-        else if (currentSlide < numSlides) {
-        currentSlide = (currentSlide + 1);
-        slidesContainer.style.transform = `translateX(${currentSlide * -50}%)`;
-        }
+// slidesContainer.style.transform = 'translateX(-90%)';
+
+let currentSlide = 0;
+const numSlides = (slidesContainer.children.length)/2;
+
+
+function handleNext() {
+    if (currentSlide >= numSlides) {
+        currentSlide = currentSlide;
     }
+    else if (currentSlide < numSlides) {
+    currentSlide = (currentSlide + 1);
+    slidesContainer.style.transform = `translateX(${currentSlide * -(200/(slidesContainer.children.length))}%)`;
+    }
+}
 
-    function handlePrev() {
-        // currentSlide = (currentSlide - 1) % numSlides;
-        if (currentSlide < 0) {
-            currentSlide = currentSlide;
-        }
-        else if (currentSlide > 0) {
-        currentSlide = (currentSlide - 1) % numSlides;
-        slidesContainer.style.transform = `translateX(${currentSlide * -50}%)`;
-        }
+function handlePrev() {
+    // currentSlide = (currentSlide - 1) % numSlides;
+    if (currentSlide < 0) {
+        currentSlide = currentSlide;
+    }
+    else if (currentSlide > 0) {
+    currentSlide = (currentSlide - 1) % numSlides;
+    slidesContainer.style.transform = `translateX(${currentSlide * -(200/(slidesContainer.children.length))}%)`;
+    }
+}
+
+// Function 2.2: create the carousel two
+const buttonPre2 = document.querySelector('[data-carousel-button-left2]');
+const buttonNext2 = document.querySelector('[data-carousel-button-right2]');
+const slidesContainer2 = document.querySelector('[data-slides2]');
+
+buttonNext2.addEventListener('click', handleNext2);
+buttonPre2.addEventListener('click', handlePrev2);
+
+let currentSlide2 = 0;
+const numSlides2 = (slidesContainer2.children.length)/2+1;
+
+
+function handleNext2() {
+    if (currentSlide2 >= numSlides2) {
+        currentSlide2 = currentSlide2;
+    }
+    else if (currentSlide2 < numSlides2) {
+    currentSlide2 = (currentSlide2 + 1);
+    slidesContainer2.style.transform = `translateX(${currentSlide2 * -(250/(slidesContainer2.children.length))}%)`;
+    }
+}
+
+function handlePrev2() {
+    if (currentSlide2 < 0) {
+        currentSlide2 = currentSlide2;
+    }
+    else if (currentSlide2 > 0) {
+    currentSlide2 = (currentSlide2 - 1) % numSlides2;
+    slidesContainer2.style.transform = `translateX(${currentSlide2 * -(250/(slidesContainer2.children.length))}%)`;
     }
 }
 
 
 
-const carousels = document.querySelectorAll('[data-carousel]');
 
-carousels.forEach(setUpCarousel);
+// const carousels = document.querySelectorAll('[data-carousel]');
+
+// carousels.forEach(setUpCarousel);
 
 
 
